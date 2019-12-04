@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Taxi">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#F2C94C"
+        android:id="@+id/lil1"
+        >
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:background="#F2C94C"
+            android:src="@drawable/ic_next"
+            android:id="@+id/Im2"
+            >
+
+
+        </ImageButton>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/Im2"
+            android:text="Taxi"
+            android:textColor="#FAF7F7"
+            android:textSize="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lil1"
+        android:fillViewport="true">
+
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

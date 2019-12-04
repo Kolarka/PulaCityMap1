@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/map"
+        tools:context=".MapsActivity"
+        android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+
+    <ImageView
+        android:id="@+id/ic_gps"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="360dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_gps">
+
+    </ImageView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:elevation="10dp"
+        android:background="#fff"
+        android:id="@+id/relLayout"
+        android:clickable="true">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/ic_search"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#0A0A0A"
+            android:id="@+id/input_search"
+            android:background="@null"
+            android:text="Get Me Somewhere"
+            android:focusable="false"
+            android:clickable="false"
+            android:longClickable="false"
+            />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/ic_search"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_search"
+
+            />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentBottom="true"
+        android:background="#fff"
+        >
+
+        <LinearLayout
+            android:id="@+id/home"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal">
+
+            <ImageButton
+                android:id="@+id/directions_bike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/ic_directions_bike_48dp"
+                android:background="#F2994A"
+                android:contentDescription="opis" />
+
+            <ImageButton
+                android:id="@+id/directions_bus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/ic_directions_bus_48dp"
+                android:background="#EB5757"
+                android:contentDescription="opis" />
+
+            <ImageButton
+                android:id="@+id/local_parking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/ic_local_parking_48dp"
+                android:background="#2A71AD"
+                android:contentDescription="opis" />
+
+            <ImageButton
+                android:id="@+id/local_taxi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/ic_local_taxi_48dp"
+                android:background="#F2C94C"
+                android:contentDescription="opis" />
+
+            <ImageButton
+                android:id="@+id/directions_boat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_directions_boat_48dp"
+                android:background="#2D9CDB"
+                android:contentDescription="opis" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/get_me_home"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:background="#C4C4C4"
+            android:layout_below="@id/home">
+
+            <ImageView
+                android:id="@+id/home_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_home_24dp"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/home_icon"
+                android:text="Get Me Home"
+                android:layout_marginLeft="15dp"
+                android:textColor="#3C3C3B"
+                android:gravity="center_vertical" />
+
+            <ImageView
+                android:id="@+id/_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_add_24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/get_me_work"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:background="#C4C4C4"
+            android:layout_below="@id/get_me_home">
+
+            <ImageView
+                android:id="@+id/work_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_work_24dp"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/work_icon"
+                android:text="Get Me to Work"
+                android:layout_marginLeft="15dp"
+                android:textColor="#3C3C3B"
+                android:gravity="center_vertical" />
+
+            <ImageView
+                android:id="@+id/more_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_more_vert_24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
