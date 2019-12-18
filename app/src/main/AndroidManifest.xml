@@ -16,7 +16,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Taxi"></activity>
+        <activity android:name=".GetMeSomewhere2"></activity>
+        <activity android:name=".Taxi" />
         <activity android:name=".SetHome" />
         <activity android:name=".Parking" />
         <activity android:name=".GetToWork" />
