@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "112035429103",
+    "firebase_url": "https://pucitymap.firebaseio.com",
+    "project_id": "pucitymap",
+    "storage_bucket": "pucitymap.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:112035429103:android:56b8382cd796513b2fb91a",
+        "android_client_info": {
+          "package_name": "com.example.pucitymap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "112035429103-9v180c2ic4f5eltojd26adsa81dsa4r3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pucitymap",
+            "certificate_hash": "8f57e4c26c0b802fcbe419d8df08769068221a12"
+          }
+        },
+        {
+          "client_id": "112035429103-n75ott9794dfni02r7sb2kvvhaqjlpi0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6xyXdxL9qIHlEzXisqNAHOLIc-PRP3RI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "112035429103-n75ott9794dfni02r7sb2kvvhaqjlpi0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
