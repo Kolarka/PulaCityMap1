@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BoatLines">
+    tools:context=".Parking">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -49,5 +49,71 @@
         android:name="com.google.android.gms.maps.SupportMapFragment" >
 
     </fragment>
+    <Button
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/red_border"
+        android:text="1. ZONA"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:id="@+id/first_zone">
 
+    </Button>
+
+    <Button
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/yellow_border"
+        android:text="2. ZONA"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:layout_below="@id/first_zone"
+        android:id="@+id/secund_zone">
+
+    </Button>
+
+    <Button
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/grey_border"
+        android:text="3. ZONA"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:id="@+id/third_zone"
+        android:layout_below="@id/secund_zone">
+
+    </Button>
+
+    <Button
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/blue_border"
+        android:text="SMS PARKING"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:id="@+id/SMS_parking"
+        android:layout_below="@id/third_zone">
+
+    </Button>
+    <Button
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/green_border"
+        android:text="AUTOMATI"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:id="@+id/automat"
+        android:layout_below="@id/SMS_parking">
+
+    </Button>
 </RelativeLayout>

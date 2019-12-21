@@ -86,7 +86,7 @@ tools:context=".Taxi">
                         android:layout_height="wrap_content"
                         android:gravity="center_horizontal"
                         android:paddingTop="10dp"
-                        android:text="NaruÄi pozivom" />
+                        android:text="Naruči pozivom" />
                     <ImageView
                         android:id="@+id/mob_icon1"
                         android:layout_width="wrap_content"
@@ -123,7 +123,7 @@ tools:context=".Taxi">
                             android:textSize="16dp"
                             android:textStyle="bold"
                             android:textColor="#ffffff"
-                            android:text="PoÄetna cijena" />
+                            android:text="Početna cijena" />
                         <TextView
                             android:id="@+id/cijena"
                             android:layout_width="match_parent"
@@ -186,7 +186,7 @@ tools:context=".Taxi">
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/cammeo"
-                android:text="NaruÄi pozivom" />
+                android:text="Naruči pozivom" />
 
             <ImageView
                 android:id="@+id/mob_icon2"

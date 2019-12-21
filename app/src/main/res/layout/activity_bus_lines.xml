@@ -1,9 +1,291 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".BusLines">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#F2994A"
+        android:id="@+id/relLayout11">
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:background="#F2994A"
+            android:src="@drawable/ic_next"
+            android:id="@+id/Im1"
+            >
+
+
+        </ImageButton>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/Im1"
+            android:text="Bus Lines"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/text_v1"
+            >
+
+        </TextView>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/relLayout11"
+        android:id="@+id/relLayout2">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/relLay" >
+
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="25dp"
+                android:id="@+id/relLay3"
+                android:layout_marginBottom="25dp"
+                android:background="#27AE60">
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_centerInParent="true"
+                    android:text="1"
+                    android:textSize="50dp"
+                    android:textAlignment="center"
+                    android:textColor="#fff">
+
+                </TextView>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="260dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/text_direction_A"
+                android:text="Direction A"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:textSize="15dp">
+
+            </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:layout_marginTop="30dp"
+                    android:text="BUS KOLODVOR-STOJA">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="60dp"
+                    android:id="@+id/text_direction_b"
+                    android:text="Direction B"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:textSize="15dp">
+
+                </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:layout_marginTop="80dp"
+                    android:text="STOJA-BUS KOLODVOR">
+
+                </TextView>
+           </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#7E7D7D"
+                android:layout_marginTop="150dp"/>
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/rel_layout4"
+            android:layout_marginTop="150dp">
+
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="25dp"
+                android:id="@+id/rel_layout5"
+                android:layout_marginBottom="25dp"
+                android:background="#EB5757">
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_centerInParent="true"
+                    android:text="2a"
+                    android:textSize="50dp"
+                    android:textAlignment="center"
+                    android:textColor="#fff">
+
+                </TextView>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="260dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="20dp">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/text_direction"
+                    android:text="Direction A"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:textSize="15dp">
+
+                </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:layout_marginTop="30dp"
+                    android:text="BUS KOLODVOR-VERUDA-VERUDELA">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="60dp"
+                    android:id="@+id/text_direction_2A"
+                    android:text="Direction B"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:textSize="15dp">
+
+                </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:layout_marginTop="80dp"
+                    android:text="VERUDELA-VIDIKOVAC-ŠIJANSKA ŠUMA">
+
+                </TextView>
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#7E7D7D"
+                android:layout_marginTop="150dp"/>
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/rel_layout_6"
+            android:layout_marginTop="300dp">
+
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="25dp"
+                android:id="@+id/rel_layout7"
+                android:layout_marginBottom="25dp"
+                android:background="#2D9CDB">
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_centerInParent="true"
+                    android:text="2a"
+                    android:textSize="50dp"
+                    android:textAlignment="center"
+                    android:textColor="#fff">
+
+                </TextView>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="260dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="20dp">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/text_directionN"
+                    android:text="Direction A"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:textSize="15dp">
+
+                </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:layout_marginTop="30dp"
+                    android:text="ŠIJANKSA ŠUMA-VIDIKOVAC-VERUDELA">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="60dp"
+                    android:id="@+id/text_direction_2AA"
+                    android:text="Direction B"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:textSize="15dp">
+
+                </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:layout_marginTop="80dp"
+                    android:text="VERUDELA-VERUDA-BUS KOLODVOR">
+
+                </TextView>
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#7E7D7D"
+                android:layout_marginTop="150dp"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

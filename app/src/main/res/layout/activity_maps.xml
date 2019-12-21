@@ -32,9 +32,10 @@
         android:layout_marginRight="15dp"
         android:layout_marginLeft="15dp"
         android:elevation="10dp"
-        android:background="#fff"
+        android:background="@drawable/white_border"
         android:id="@+id/relLayout"
-        android:clickable="true">
+        android:clickable="true"
+        >
 
         <EditText
             android:layout_width="match_parent"
@@ -135,7 +136,7 @@
             android:layout_marginLeft="30dp"
             android:layout_marginTop="30dp"
             android:layout_marginRight="30dp"
-            android:background="#C4C4C4"
+            android:background="@drawable/grey_border"
             android:layout_below="@id/home">
 
             <ImageView
@@ -171,7 +172,7 @@
             android:layout_marginLeft="30dp"
             android:layout_marginTop="15dp"
             android:layout_marginRight="30dp"
-            android:background="#C4C4C4"
+            android:background="@drawable/grey_border"
             android:layout_below="@id/get_me_home">
 
             <ImageView
