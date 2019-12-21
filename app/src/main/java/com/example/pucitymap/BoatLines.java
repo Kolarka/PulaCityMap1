@@ -80,8 +80,31 @@ public class BoatLines extends FragmentActivity implements OnMapReadyCallback{
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_boat_lines);
-
+        ImageButton BotLin = (ImageButton) findViewById(R.id.Im_boatline);
+        BotLin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openMap();
+            }
+        });
         getLocationPermission();
+        RelativeLayout PuZd =(RelativeLayout) findViewById(R.id.Pu_Zd);
+        PuZd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openPUZD();
+            }
+        });
+    }
+
+    private void openPUZD() {
+        Intent intentpuzd = new Intent(this, PU_ZD.class);
+        startActivity(intentpuzd);
+    }
+
+    private void openMap() {
+        Intent intentBoat = new Intent(this, MapsActivity.class);
+        startActivity(intentBoat);
     }
 
     private void getDeviceLocation(){

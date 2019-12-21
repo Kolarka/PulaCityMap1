@@ -18,7 +18,7 @@
             android:layout_marginLeft="10dp"
             android:background="#4083A9"
             android:src="@drawable/ic_next"
-            android:id="@+id/Im1"
+            android:id="@+id/Im_parking"
             >
 
 
@@ -27,7 +27,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_toRightOf="@id/Im1"
+            android:layout_toRightOf="@id/Im_parking"
             android:text="Parking"
             android:textSize="20dp"
             android:textColor="#fff"

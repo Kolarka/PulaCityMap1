@@ -15,6 +15,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
@@ -104,10 +105,22 @@ public class Parking extends FragmentActivity implements OnMapReadyCallback {
                 openAutomat();
             }
         });
+        ImageButton Parkingim = (ImageButton) findViewById(R.id.Im_parking);
+        Parkingim.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openMapsActivity();
+            }
+        });
 
 
 
         getLocationPermission();
+    }
+
+    private void openMapsActivity() {
+        Intent intentMap = new Intent(this, MapsActivity.class);
+        startActivity(intentMap);
     }
 
     private void openAutomat() {

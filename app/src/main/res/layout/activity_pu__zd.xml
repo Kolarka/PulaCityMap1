@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PU_ZD">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#4083A9"
+        android:id="@+id/lila" >
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:background="#4083A9"
+            android:src="@drawable/ic_cancel"
+            android:id="@+id/imag12" >
+        </ImageButton>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/imag12"
+            android:text="Pula-Zadar"
+            android:textStyle="bold"
+            android:textColor="#FAF7F7"
+            android:textSize="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp">
+        </TextView>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/relativla"
+        android:layout_below="@id/lila"
+        android:background="#4083A9">
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativla"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:background="#4083A9">
+
+        <RelativeLayout
+            android:layout_width="320dp"
+            android:layout_height="700dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/white_border">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:id="@+id/Pu">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Pula"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:textAlignment="center">
+
+                </TextView>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#7E7D7D"
+                    android:layout_marginTop="43dp">
+
+                </View>
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="50dp"
+                    android:text="Polazak"
+                    android:layout_marginLeft="50dp">
+
+                </TextView>
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="250dp"
+                    android:text="07:00">
+
+                </TextView>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:id="@+id/Un"
+                android:layout_below="@id/Pu">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Unije"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:textAlignment="center">
+
+                </TextView>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#7E7D7D"
+                    android:layout_marginTop="43dp">
+
+                </View>
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="50dp"
+                    android:text="Dolazak"
+                    android:layout_marginLeft="50dp"
+                    android:id="@+id/pol">
+
+                </TextView>
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/pol"
+                    android:text="Polazak"
+                    android:layout_marginLeft="50dp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="250dp"
+                    android:text="08:35"
+                    android:id="@+id/time1">
+
+                </TextView>
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="250dp"
+                    android:text="08:40"
+                    android:layout_below="@id/time1">
+
+                </TextView>
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:id="@+id/Sk"
+                android:layout_below="@id/Un">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Susak"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:textAlignment="center">
+
+                </TextView>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#7E7D7D"
+                    android:layout_marginTop="43dp">
+
+                </View>
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="50dp"
+                    android:text="Dolazak"
+                    android:layout_marginLeft="50dp"
+                    android:id="@+id/polaz">
+
+                </TextView>
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/polaz"
+                    android:text="Polazak"
+                    android:layout_marginLeft="50dp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="250dp"
+                    android:text="09:15"
+                    android:id="@+id/time123">
+
+                </TextView>
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="250dp"
+                    android:text="09:20"
+                    android:layout_below="@id/time123">
+
+                </TextView>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:id="@+id/Ml"
+                android:layout_below="@id/Sk">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Mali Lošinj"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:textAlignment="center">
+
+                </TextView>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#7E7D7D"
+                    android:layout_marginTop="43dp">
+
+                </View>
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="50dp"
+                    android:text="Dolazak"
+                    android:layout_marginLeft="50dp"
+                    android:id="@+id/pola">
+
+                </TextView>
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/pola"
+                    android:text="Polazak"
+                    android:layout_marginLeft="50dp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="250dp"
+                    android:text="10:05"
+                    android:id="@+id/time12">
+
+                </TextView>
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="250dp"
+                    android:text="10:10"
+                    android:layout_below="@id/time12">
+
+                </TextView>
+
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:id="@+id/Il"
+                android:layout_below="@id/Ml">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Ilovik"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:textAlignment="center">
+
+                </TextView>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#7E7D7D"
+                    android:layout_marginTop="43dp">
+
+                </View>
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="50dp"
+                    android:text="Dolazak"
+                    android:layout_marginLeft="50dp"
+                    android:id="@+id/polazak">
+
+                </TextView>
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/polazak"
+                    android:text="Polazak"
+                    android:layout_marginLeft="50dp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="250dp"
+                    android:text="11:05"
+                    android:id="@+id/time124">
+
+                </TextView>
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="250dp"
+                    android:text="11:10"
+                    android:layout_below="@id/time124">
+
+                </TextView>
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:id="@+id/Zd"
+                android:layout_below="@id/Sl">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Zadar"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:textAlignment="center">
+
+                </TextView>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#7E7D7D"
+                    android:layout_marginTop="43dp">
+
+                </View>
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="50dp"
+                    android:text="Dolazak"
+                    android:layout_marginLeft="50dp"
+                    android:id="@+id/polazak1">
+
+                </TextView>
+
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="250dp"
+                    android:text="13:15"
+                    android:id="@+id/time1247">
+
+                </TextView>
+
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:id="@+id/Sl"
+                android:layout_below="@id/Il">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Silba"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:textAlignment="center">
+
+                </TextView>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#7E7D7D"
+                    android:layout_marginTop="43dp">
+
+                </View>
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="50dp"
+                    android:text="Dolazak"
+                    android:layout_marginLeft="50dp"
+                    android:id="@+id/polaza">
+
+                </TextView>
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/polaza"
+                    android:text="Polazak"
+                    android:layout_marginLeft="50dp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="250dp"
+                    android:text="11:50"
+                    android:id="@+id/time1245">
+
+                </TextView>
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="250dp"
+                    android:text="11:55"
+                    android:layout_below="@id/time1245">
+
+                </TextView>
+
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+
+    </ScrollView>
+
+</RelativeLayout>

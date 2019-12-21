@@ -18,7 +18,7 @@
             android:layout_marginLeft="10dp"
             android:background="#4083A9"
             android:src="@drawable/ic_next"
-            android:id="@+id/Im1"
+            android:id="@+id/Im_boatline"
             >
 
 
@@ -27,7 +27,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_toRightOf="@id/Im1"
+            android:layout_toRightOf="@id/Im_boatline"
             android:text="Boat lines"
             android:textSize="20dp"
             android:textColor="#fff"
@@ -43,11 +43,200 @@
 
     <fragment
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="250dp"
         android:layout_marginTop="55dp"
         android:id="@+id/map"
         android:name="com.google.android.gms.maps.SupportMapFragment" >
 
     </fragment>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/map"
+
+        android:background="#4083A9">
+
+
+
+
+        <RelativeLayout
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/white_border"
+            android:id="@+id/Pu_Zd">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:text="Pula-Zadar"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:textAlignment="center">
+
+            </TextView>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#7E7D7D"
+                android:layout_marginTop="43dp">
+
+            </View>
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="50dp"
+                android:text="Katamaran"
+                android:layout_marginLeft="50dp">
+
+            </TextView>
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="250dp"
+                android:text="07:00">
+
+            </TextView>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="110dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/white_border"
+            android:id="@+id/Pu_brij">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:text="Pula-Brijuni"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:textAlignment="center">
+
+            </TextView>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#7E7D7D"
+                android:layout_marginTop="43dp">
+
+            </View>
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="50dp"
+                android:text="Korkyra"
+                android:layout_marginLeft="50dp">
+
+            </TextView>
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="250dp"
+                android:text="12:00">
+
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="210dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/white_border"
+            android:id="@+id/pu_fra">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:text="Pula-Fratarski"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:textAlignment="center">
+
+            </TextView>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#7E7D7D"
+                android:layout_marginTop="43dp">
+
+            </View>
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="50dp"
+                android:text="Odisej"
+                android:layout_marginLeft="50dp">
+
+            </TextView>
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="250dp"
+                android:text="09:00">
+
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="310dp"
+            android:layout_marginRight="30dp"
+
+            android:background="@drawable/white_border"
+            android:id="@+id/pu_ve">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:text="Pula-Venecija"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:textAlignment="center">
+
+            </TextView>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#7E7D7D"
+                android:layout_marginTop="43dp">
+
+            </View>
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="50dp"
+                android:text="Katamaran"
+                android:layout_marginLeft="50dp">
+
+            </TextView>
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="250dp"
+                android:text="07:30">
+
+            </TextView>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
 
 </RelativeLayout>

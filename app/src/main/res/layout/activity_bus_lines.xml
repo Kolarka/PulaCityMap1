@@ -118,7 +118,7 @@
            </RelativeLayout>
             <View
                 android:layout_width="match_parent"
-                android:layout_height="1dp"
+                android:layout_height="2dp"
                 android:background="#7E7D7D"
                 android:layout_marginTop="150dp"/>
         </RelativeLayout>
@@ -199,9 +199,11 @@
             </RelativeLayout>
             <View
                 android:layout_width="match_parent"
-                android:layout_height="1dp"
+                android:layout_height="5dp"
                 android:background="#7E7D7D"
-                android:layout_marginTop="150dp"/>
+                android:layout_marginTop="150dp">
+
+            </View>
         </RelativeLayout>
 
 
