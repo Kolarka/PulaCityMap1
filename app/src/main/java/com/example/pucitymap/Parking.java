@@ -8,10 +8,14 @@ import androidx.core.content.ContextCompat;
 import androidx.fragment.app.FragmentActivity;
 
 import android.Manifest;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.google.android.gms.location.FusedLocationProviderClient;
@@ -63,8 +67,72 @@ public class Parking extends FragmentActivity implements OnMapReadyCallback {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_parking);
+        Button SMS_button = (Button) findViewById(R.id.SMS_parking);
+        SMS_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                    openSMS_Parking();
+            }
+        });
+        Button zoneOne = (Button) findViewById(R.id.first_zone);
+        zoneOne.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openZoneOne();
+            }
+        });
+        Button zoneTwo = (Button) findViewById(R.id.secund_zone);
+        zoneTwo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openZoneTwo();
+            }
+        });
+
+        Button zoneThree = (Button) findViewById(R.id.third_zone);
+        zoneThree.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openZoneThree();
+            }
+        });
+
+        Button Automat = (Button) findViewById(R.id.automat);
+        Automat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openAutomat();
+            }
+        });
+
+
 
         getLocationPermission();
+    }
+
+    private void openAutomat() {
+        Intent intentAtomat = new Intent(this, Automat.class);
+        startActivity(intentAtomat);
+    }
+
+    private void openZoneThree() {
+        Intent intentZoneThree = new Intent(this, ZoneThree.class);
+        startActivity(intentZoneThree);
+    }
+
+    private void openZoneTwo() {
+        Intent intentZoneTwo = new Intent(this, ZoneTwo.class);
+        startActivity(intentZoneTwo);
+    }
+
+    private void openZoneOne() {
+        Intent intentZoneOne = new Intent(this, ZoneOne.class);
+        startActivity(intentZoneOne);
+    }
+
+    private void openSMS_Parking() {
+        Intent intentP = new Intent(this, SMS_Parking.class);
+        startActivity(intentP);
     }
 
     private void getDeviceLocation(){
