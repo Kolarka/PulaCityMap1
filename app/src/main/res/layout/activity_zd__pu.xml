@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PU_ZD">
+    tools:context=".ZD_PU">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:background="#4083A9"
-        android:id="@+id/lila" >
+        android:id="@+id/lilay" >
 
         <ImageButton
             android:layout_width="60dp"
@@ -25,7 +25,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_toRightOf="@id/imag12"
-            android:text="Pula-Zadar"
+            android:text="Zadar Pula"
             android:textStyle="bold"
             android:textColor="#FAF7F7"
             android:textSize="20dp"
@@ -37,16 +37,17 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:id="@+id/relativla"
-        android:layout_below="@id/lila"
+        android:layout_below="@id/lilay"
         android:background="#4083A9">
         <Button
             android:layout_width="150dp"
             android:layout_height="match_parent"
             android:layout_marginLeft="20dp"
             android:layout_marginBottom="10dp"
-            android:background="@drawable/white_border"
+            android:background="@drawable/my_border"
             android:text="Direction A"
-            android:textColor="#4083A9">
+            android:textColor="#fff"
+            android:id="@+id/direction_a_btn">
 
         </Button>
         <Button
@@ -55,10 +56,10 @@
             android:layout_marginLeft="185dp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="10dp"
-            android:background="@drawable/my_border"
+            android:background="@drawable/white_border"
             android:text="Direction B"
-            android:textColor="#fff"
-            android:id="@+id/direction_b_btn">
+            android:textColor="#4083A9"
+            >
 
         </Button>
 
@@ -88,7 +89,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:layout_marginTop="10dp"
-                    android:text="Pula"
+                    android:text="Zadar"
                     android:textStyle="bold"
                     android:textSize="25dp"
                     android:textAlignment="center">
@@ -114,7 +115,7 @@
                     android:layout_height="30dp"
                     android:layout_marginTop="50dp"
                     android:layout_marginLeft="250dp"
-                    android:text="07:00">
+                    android:text="16:30">
 
                 </TextView>
 
@@ -131,7 +132,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:layout_marginTop="10dp"
-                    android:text="Unije"
+                    android:text="Silba"
                     android:textStyle="bold"
                     android:textSize="25dp"
                     android:textAlignment="center">
@@ -167,7 +168,7 @@
                     android:layout_height="20dp"
                     android:layout_marginTop="50dp"
                     android:layout_marginLeft="250dp"
-                    android:text="08:35"
+                    android:text="15:50"
                     android:id="@+id/time1">
 
                 </TextView>
@@ -175,7 +176,7 @@
                     android:layout_width="50dp"
                     android:layout_height="20dp"
                     android:layout_marginLeft="250dp"
-                    android:text="08:40"
+                    android:text="15:55"
                     android:layout_below="@id/time1">
 
                 </TextView>
@@ -194,7 +195,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:layout_marginTop="10dp"
-                    android:text="Susak"
+                    android:text="Illok"
                     android:textStyle="bold"
                     android:textSize="25dp"
                     android:textAlignment="center">
@@ -230,7 +231,7 @@
                     android:layout_height="20dp"
                     android:layout_marginTop="50dp"
                     android:layout_marginLeft="250dp"
-                    android:text="09:15"
+                    android:text="16:35"
                     android:id="@+id/time123">
 
                 </TextView>
@@ -238,7 +239,7 @@
                     android:layout_width="50dp"
                     android:layout_height="20dp"
                     android:layout_marginLeft="250dp"
-                    android:text="09:20"
+                    android:text="16:40"
                     android:layout_below="@id/time123">
 
                 </TextView>
@@ -290,7 +291,7 @@
                     android:layout_height="20dp"
                     android:layout_marginTop="50dp"
                     android:layout_marginLeft="250dp"
-                    android:text="10:05"
+                    android:text="17:35"
                     android:id="@+id/time12">
 
                 </TextView>
@@ -298,7 +299,7 @@
                     android:layout_width="50dp"
                     android:layout_height="20dp"
                     android:layout_marginLeft="250dp"
-                    android:text="10:10"
+                    android:text="17:40"
                     android:layout_below="@id/time12">
 
                 </TextView>
@@ -316,7 +317,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:layout_marginTop="10dp"
-                    android:text="Ilovik"
+                    android:text="Susak"
                     android:textStyle="bold"
                     android:textSize="25dp"
                     android:textAlignment="center">
@@ -352,7 +353,7 @@
                     android:layout_height="20dp"
                     android:layout_marginTop="50dp"
                     android:layout_marginLeft="250dp"
-                    android:text="11:05"
+                    android:text="18:25"
                     android:id="@+id/time124">
 
                 </TextView>
@@ -360,7 +361,7 @@
                     android:layout_width="50dp"
                     android:layout_height="20dp"
                     android:layout_marginLeft="250dp"
-                    android:text="11:10"
+                    android:text="18:30"
                     android:layout_below="@id/time124">
 
                 </TextView>
@@ -379,7 +380,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:layout_marginTop="10dp"
-                    android:text="Zadar"
+                    android:text="Pula"
                     android:textStyle="bold"
                     android:textSize="25dp"
                     android:textAlignment="center">
@@ -408,7 +409,7 @@
                     android:layout_height="20dp"
                     android:layout_marginTop="50dp"
                     android:layout_marginLeft="250dp"
-                    android:text="13:15"
+                    android:text="20:45"
                     android:id="@+id/time1247">
 
                 </TextView>
@@ -428,7 +429,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:layout_marginTop="10dp"
-                    android:text="Silba"
+                    android:text="Unije"
                     android:textStyle="bold"
                     android:textSize="25dp"
                     android:textAlignment="center">
@@ -464,7 +465,7 @@
                     android:layout_height="20dp"
                     android:layout_marginTop="50dp"
                     android:layout_marginLeft="250dp"
-                    android:text="11:50"
+                    android:text="19:05"
                     android:id="@+id/time1245">
 
                 </TextView>
@@ -472,7 +473,7 @@
                     android:layout_width="50dp"
                     android:layout_height="20dp"
                     android:layout_marginLeft="250dp"
-                    android:text="11:55"
+                    android:text="19:10"
                     android:layout_below="@id/time1245">
 
                 </TextView>

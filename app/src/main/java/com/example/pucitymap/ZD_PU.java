@@ -7,24 +7,23 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class PU_ZD extends AppCompatActivity {
+public class ZD_PU extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pu__zd);
-
-        Button direction_b = (Button) findViewById(R.id.direction_b_btn);
-        direction_b.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.activity_zd__pu);
+        Button direction_a = (Button) findViewById(R.id.direction_a_btn);
+        direction_a.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openZDPU();
+                openPUZD();
             }
         });
     }
 
-    private void openZDPU() {
-        Intent intentZDPU = new Intent(this, ZD_PU.class);
-        startActivity(intentZDPU);
+    private void openPUZD() {
+        Intent intentPUZD = new Intent(this, PU_ZD.class);
+        startActivity(intentPUZD);
     }
 }
