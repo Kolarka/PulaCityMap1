@@ -16,7 +16,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ZD_PU"></activity>
+        <activity android:name=".VEN_PU"></activity>
+        <activity android:name=".FRA_PU" />
+        <activity android:name=".PU_VEN" />
+        <activity android:name=".PU_FRA" />
+        <activity android:name=".PU_BRIJ" />
+        <activity android:name=".ZD_PU" />
         <activity android:name=".PU_ZD" />
         <activity android:name=".Automat" />
         <activity android:name=".ZoneThree" />

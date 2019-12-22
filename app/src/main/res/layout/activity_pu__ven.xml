@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PU_VEN">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#4083A9"
+        android:id="@+id/lila" >
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:background="#4083A9"
+            android:src="@drawable/ic_cancel"
+            android:id="@+id/backven" >
+        </ImageButton>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/backven"
+            android:text="Pula-Venecija"
+            android:textStyle="bold"
+            android:textColor="#FAF7F7"
+            android:textSize="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp">
+        </TextView>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/relativla12"
+        android:layout_below="@id/lila"
+        android:background="#4083A9">
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/white_border"
+            android:text="Direction A"
+            android:textColor="#4083A9">
+
+        </Button>
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="185dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/my_border"
+            android:text="Direction B"
+            android:textColor="#fff"
+            android:id="@+id/direction_be">
+
+        </Button>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativla12"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:background="#4083A9">
+
+        <RelativeLayout
+            android:layout_width="320dp"
+            android:layout_height="700dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/white_border">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:id="@+id/PuVen">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Pula"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:textAlignment="center">
+
+                </TextView>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#7E7D7D"
+                    android:layout_marginTop="43dp">
+
+                </View>
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="50dp"
+                    android:text="Polazak"
+                    android:layout_marginLeft="50dp"
+                    android:id="@+id/pola12">
+
+                </TextView>
+
+
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="250dp"
+                    android:text="07:30"
+                    android:id="@+id/texz">
+
+                </TextView>
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:id="@+id/Puven"
+                android:layout_below="@id/PuVen">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Venecija"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:textAlignment="center">
+
+                </TextView>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#7E7D7D"
+                    android:layout_marginTop="43dp">
+
+                </View>
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="50dp"
+                    android:text="Dolazak"
+                    android:layout_marginLeft="50dp"
+                    android:id="@+id/pol124">
+
+                </TextView>
+
+
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="250dp"
+                    android:text="11:15"
+                    android:id="@+id/extviev1">
+
+                </TextView>
+
+
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

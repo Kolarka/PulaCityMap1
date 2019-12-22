@@ -95,6 +95,42 @@ public class BoatLines extends FragmentActivity implements OnMapReadyCallback{
                 openPUZD();
             }
         });
+        RelativeLayout PuBrij = (RelativeLayout) findViewById(R.id.Pu_brij);
+        PuBrij.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openPUbrij();
+            }
+        });
+        RelativeLayout PuFrat = (RelativeLayout) findViewById(R.id.pu_fra);
+        PuFrat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openPuFra();
+            }
+        });
+        RelativeLayout PuVen = (RelativeLayout) findViewById(R.id.pu_ve);
+        PuVen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openPuVen();
+            }
+        });
+    }
+
+    private void openPuVen() {
+        Intent intenPuven = new Intent(this, PU_VEN.class);
+        startActivity(intenPuven);
+    }
+
+    private void openPuFra() {
+        Intent intentPufra = new Intent(this, PU_FRA.class);
+        startActivity(intentPufra);
+    }
+
+    private void openPUbrij() {
+        Intent intentpubrij = new Intent(this, PU_BRIJ.class);
+        startActivity(intentpubrij);
     }
 
     private void openPUZD() {

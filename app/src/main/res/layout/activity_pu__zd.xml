@@ -18,13 +18,13 @@
             android:layout_marginLeft="10dp"
             android:background="#4083A9"
             android:src="@drawable/ic_cancel"
-            android:id="@+id/imag12" >
+            android:id="@+id/backto" >
         </ImageButton>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_toRightOf="@id/imag12"
+            android:layout_toRightOf="@id/backto"
             android:text="Pula-Zadar"
             android:textStyle="bold"
             android:textColor="#FAF7F7"
