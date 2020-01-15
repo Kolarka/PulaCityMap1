@@ -16,7 +16,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".VEN_PU"></activity>
+        <activity android:name=".Gas_station"></activity>
+        <activity android:name=".Car" />
+        <activity android:name=".Bike_to" />
+        <activity android:name=".Walk" />
+        <activity android:name=".Bus_suggestion" />
+        <activity android:name=".Suggestions" />
+        <activity android:name=".Map_Direction" />
+        <activity android:name=".VEN_PU" />
         <activity android:name=".FRA_PU" />
         <activity android:name=".PU_VEN" />
         <activity android:name=".PU_FRA" />
@@ -47,7 +54,7 @@
         -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="@string/google_maps_key" />
+            android:value="AIzaSyCIzP1XLMoczgFMSzaHO3_ijTjENHWGmmI@string/google_maps_key" />
 
         <activity
             android:name=".MapsActivity"

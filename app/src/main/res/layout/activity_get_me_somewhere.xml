@@ -9,7 +9,8 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:background="#4083A9">
+        android:background="#4083A9"
+        android:id="@+id/relLayouttxt">
 
         <ImageButton
             android:layout_width="60dp"
@@ -37,46 +38,51 @@
 
         </TextView>
 
-      <RelativeLayout
-          android:layout_width="match_parent"
-          android:layout_height="100dp"
-          android:layout_marginTop="70dp"
-          android:layout_marginBottom="85dp"
-          android:layout_marginLeft="20dp"
-          android:layout_marginRight="20dp"
-          android:id="@+id/relLayout1"
-          android:background="@drawable/white_border">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="85dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/relLayout1"
+            android:background="@drawable/white_border">
 
 
 
-          <ImageView
-              android:layout_width="20dp"
-              android:layout_height="20dp"
-              android:id="@+id/ic_magny"
-              android:layout_centerVertical="true"
-              android:layout_marginLeft="10dp"
-              android:src="@drawable/ic_magny">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/ic_magny"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_magny">
 
-          </ImageView>
-          <EditText
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:layout_toRightOf="@id/ic_magny"
-              android:layout_marginLeft="10dp"
-              android:id="@+id/search_text1"
-              android:layout_centerVertical="true"
-              android:textSize="20dp"
-              android:textColor="#000"
-              android:background="@null"
-              android:hint="Where are you coming from?"
-              android:imeOptions="actionSearch"
-              >
+            </ImageView>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/ic_magny"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/place_search"
+                android:layout_centerVertical="true"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:background="@null"
+                android:hint="Where are you coming from?"
+                android:imeOptions="actionSearch"
 
-          </EditText>
 
-      </RelativeLayout>
+                >
+
+            </EditText>
+
+        </RelativeLayout>
 
     </RelativeLayout>
+
+
+
 
 
 </RelativeLayout>
