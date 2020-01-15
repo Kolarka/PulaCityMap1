@@ -16,7 +16,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Gas_station"></activity>
+        <activity android:name=".Stoja_to_Bus_station"></activity>
+        <activity android:name=".Bus_station_to_Stoja" />
+        <activity android:name=".Gas_station" />
         <activity android:name=".Car" />
         <activity android:name=".Bike_to" />
         <activity android:name=".Walk" />
