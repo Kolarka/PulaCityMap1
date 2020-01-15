@@ -1,9 +1,139 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Map_Direction">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:id="@+id/relLayout_txt33"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#4083A9">
+
+        <ImageButton
+            android:id="@+id/cancel"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:background="#4083A9"
+            android:src="@drawable/ic_cancel333">
+
+
+        </ImageButton>
+
+
+        <RelativeLayout
+            android:id="@+id/relLayout33333"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/cancel"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="85dp"
+            android:background="@drawable/white_border">
+
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:text="Start"
+                android:textStyle="bold"
+                android:id="@+id/start33">
+
+            </EditText>
+
+            <ImageButton
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/ic_location33"
+                android:layout_centerVertical="true"
+
+                android:src="@drawable/ic_location"
+                android:layout_toRightOf="@id/start33"
+
+                >
+
+            </ImageButton>
+
+
+            <EditText
+                android:id="@+id/edit_text_start"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:hint="Veruda ulica Pula"
+                android:imeOptions="actionSearch"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:layout_toRightOf="@id/ic_location33"
+
+
+                >
+
+            </EditText>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relLayout333333"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="125dp"
+        android:background="@drawable/white_border">
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:text="End"
+            android:textStyle="bold"
+            android:id="@+id/start3333">
+
+        </EditText>
+
+        <ImageButton
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/ic_location333"
+            android:layout_centerVertical="true"
+
+            android:src="@drawable/ic_location"
+            android:layout_toRightOf="@id/start3333"
+
+            >
+
+        </ImageButton>
+
+
+        <EditText
+            android:id="@+id/edit_text_start3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:hint="Rovinjska 14"
+            android:imeOptions="actionSearch"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:layout_toRightOf="@id/ic_location333"
+
+
+            >
+
+        </EditText>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
